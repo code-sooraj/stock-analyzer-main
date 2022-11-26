@@ -1,4 +1,4 @@
-package com.conserwit.stock.analyzer.stock.analyzer.main.repository.queries;
+package com.conserwit.stock.analyzer.main.repository.queries;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

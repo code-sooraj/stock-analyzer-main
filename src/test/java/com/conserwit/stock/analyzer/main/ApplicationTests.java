@@ -1,10 +1,12 @@
-package com.conserwit.stock.analyzer.stock.analyzer.main;
+package com.conserwit.stock.analyzer.main;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
-class StockAnalyzerMainApplicationTests {
+@ActiveProfiles("dev")
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {

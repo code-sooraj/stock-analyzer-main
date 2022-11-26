@@ -1,10 +1,14 @@
+# Compiled class file
+*.class
+
+# Maven generated files
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
 # Log file
-*.log
+*.log.*
 
 ### STS ###
 .apt_generated

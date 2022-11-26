@@ -1,8 +1,8 @@
-package com.conserwit.stock.analyzer.stock.analyzer.main.repository;
+package com.conserwit.stock.analyzer.main.repository;
 
-import com.conserwit.stock.analyzer.stock.analyzer.main.data.db.Stock;
-import com.conserwit.stock.analyzer.stock.analyzer.main.data.db.mapper.StockMetadataRowMapper;
-import com.conserwit.stock.analyzer.stock.analyzer.main.repository.queries.StockMetadataQueries;
+import com.conserwit.stock.analyzer.main.data.db.Stock;
+import com.conserwit.stock.analyzer.main.data.db.mapper.StockMetadataRowMapper;
+import com.conserwit.stock.analyzer.main.repository.queries.StockMetadataQueries;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

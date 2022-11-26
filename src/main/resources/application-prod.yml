@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: "xyz"
+    driver-class-name: "xyz"
+    username: "xyz"
+    password: "xyz"
+
+stock:
+  query:
+    find:
+      by:
+        id: "SELECT * FROM STOCK WHERE STOCK_ID = :id"
+      all: "SELECT * FROM STOCK ORDER BY STOCK_ID"
+    delete:
+      by:
+        id: "DELETE FROM STOCK WHERE STOCK_ID =:id"
+    update: "UPDATE STOCK SET TICKER_SYMBOL = :symbol, STOCK_NAME = :name, EXCHANGE = :exchange, COUNTRY_CODE = :country, CURRENCY_CODE = :currency, FOUNDED_YEAR = :foundedYear WHERE STOCK_ID = :id"

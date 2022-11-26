@@ -1,0 +1,37 @@
+server:
+  port: ${SA_MAIN_PORT:9091} # Indicate the default PORT where this service will be started
+spring:
+  application:
+    name: stock-analyzer-main
+  config:
+    import: optional:configserver:${SA_CONFIG_SERVER_URI:http://localhost:8888/}
+  datasource:
+    url: "jdbc:sqlite:db/stock-metadata.db"
+    driver-class-name: "org.sqlite.JDBC"
+    username: ""
+    password: ""
+stock:
+  query:
+    find:
+      by:
+        id: "SELECT * FROM STOCK WHERE STOCK_ID = :id"
+      all: "SELECT * FROM STOCK ORDER BY STOCK_ID"
+    delete:
+      by:
+        id: "DELETE FROM STOCK WHERE STOCK_ID =:id"
+    update: "UPDATE STOCK SET TICKER_SYMBOL = :symbol, STOCK_NAME = :name, EXCHANGE = :exchange, COUNTRY_CODE = :country, CURRENCY_CODE = :currency, FOUNDED_YEAR = :foundedYear WHERE STOCK_ID = :id"
+eureka:
+  instance:
+    hostname: ${SA_DISCOVERY_INSTANCE_HOSTNAME:localhost}
+    preferIpAddress: true
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${SA_DISCOVERY_URI:http://localhost:8761/eureka}
+    enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
+logging:
+  level:
+    org.springframework.cloud.commons.util.InetUtils: trace

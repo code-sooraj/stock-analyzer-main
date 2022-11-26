@@ -1,6 +1,6 @@
-package com.conserwit.stock.analyzer.stock.analyzer.main.data.db.mapper;
+package com.conserwit.stock.analyzer.main.data.db.mapper;
 
-import com.conserwit.stock.analyzer.stock.analyzer.main.data.db.Stock;
+import com.conserwit.stock.analyzer.main.data.db.Stock;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

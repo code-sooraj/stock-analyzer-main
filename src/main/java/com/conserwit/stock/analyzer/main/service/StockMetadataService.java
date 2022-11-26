@@ -1,7 +1,7 @@
-package com.conserwit.stock.analyzer.stock.analyzer.main.service;
+package com.conserwit.stock.analyzer.main.service;
 
-import com.conserwit.stock.analyzer.stock.analyzer.main.data.db.Stock;
-import com.conserwit.stock.analyzer.stock.analyzer.main.repository.StockMetadataRepository;
+import com.conserwit.stock.analyzer.main.data.db.Stock;
+import com.conserwit.stock.analyzer.main.repository.StockMetadataRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

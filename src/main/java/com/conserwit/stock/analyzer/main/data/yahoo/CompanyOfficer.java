@@ -1,4 +1,4 @@
-package com.conserwit.stock.analyzer.stock.analyzer.main.data.yahoo;
+package com.conserwit.stock.analyzer.main.data.yahoo;
 
 import lombok.Data;
 

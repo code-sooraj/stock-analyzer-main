@@ -1,4 +1,4 @@
-package com.conserwit.stock.analyzer.stock.analyzer.main.data.db;
+package com.conserwit.stock.analyzer.main.data.db;
 
 import lombok.Data;
 
